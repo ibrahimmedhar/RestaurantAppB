@@ -13,7 +13,7 @@ namespace RestaurantApp.Pages
             DataStorageHandler.SaveChanges();
             Console.Clear();
             string prompt = "Welkom bij ons Restaurant!";
-            string[] options = { "Promoties", "Gebruiker aanmaken" };
+            string[] options = { "Promoties", "Gebruiker aanmaken" , "Overzicht menu"};
             ConsoleMenu StartPagina = new ConsoleMenu(prompt, options);
             StartPagina.DisplayOptions();
             int selectedIndex = StartPagina.Run();
@@ -26,6 +26,11 @@ namespace RestaurantApp.Pages
             if (options[selectedIndex] == "Gebruiker aanmaken")
             {
                 GebruikersPage.GebruikerAanmaken();
+            }
+
+            if (options[selectedIndex] == "Overzicht menu")
+            {
+                MenuPage.Main();
             }
         }
     }
