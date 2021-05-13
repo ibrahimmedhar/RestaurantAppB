@@ -9,11 +9,10 @@ namespace RestaurantApp.Pages
 {
     class MenuPage
     {
-        public static void Main(string[] args)
+        public static void ShowMenu()
         {
-
-            Gang[] menu = JsonConvert.DeserializeObject<Gang[]>(File.ReadAllText(@"C:\Users\yser\source\repos\ConsoleApp2\Menu.json"));
-
+            Console.Clear();
+            Gang[] menu = JsonConvert.DeserializeObject<Gang[]>(File.ReadAllText(@"Menu.json"));
             Console.WriteLine("Menu");
             for (int i = 0; i < menu.Length; i++)
             {
@@ -31,24 +30,8 @@ namespace RestaurantApp.Pages
                 }
 
             }
-            Console.WriteLine(" ");
-            Console.WriteLine("Geef de gerechten nummers door die je wilt bestellen:");
-            string input = Console.ReadLine();
-
-            var gekozenGerechten = input.Split(" ").Select(Int32.Parse).ToList();
-
-
-            for (int m = 0; m < menu.Length; m++)
-            {
-                for (int g = 0; g < menu[m].Gerechten.Length; g++)
-                {
-                    if (gekozenGerechten.Contains(menu[m].Gerechten[g].GerechtNummer))
-                    {
-                        Console.WriteLine(menu[m].Gerechten[g].Naam);
-                    }
-                        
-                }
-            }
+            Console.ReadKey(true);
+            WelcomePage.Run(); 
        }
     }
 }
