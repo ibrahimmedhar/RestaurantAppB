@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using RestaurantApp.DAL;
 using RestaurantApp.Classes;
+using RestaurantAppB.Pages;
 
 namespace RestaurantApp.Pages
 {
@@ -13,19 +14,14 @@ namespace RestaurantApp.Pages
             DataStorageHandler.SaveChanges();
             Console.Clear();
             string prompt = "Welkom bij ons Restaurant!";
-            string[] options = { "Klant inloggen", "Admin inloggen", "Account aanmaken"};
+            string[] options = {"Inloggen", "Account aanmaken"};
             ConsoleMenu StartPagina = new ConsoleMenu(prompt, options);
             StartPagina.DisplayOptions();
             int selectedIndex = StartPagina.Run();
 
-            if (options[selectedIndex] == "Klant inloggen")
+            if (options[selectedIndex] == "Inloggen")
             {
-                KlantWelcomePage.Run();
-            }
-
-            if (options[selectedIndex] == "Admin inloggen")
-            {
-                AdminWelcomePage.Run();
+                InlogPage.Run();
             }
 
             if (options[selectedIndex] == "Account aanmaken")
