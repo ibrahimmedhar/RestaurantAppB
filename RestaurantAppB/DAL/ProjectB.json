@@ -1,0 +1,30 @@
+{
+  "promotions": [
+    {
+      "promotietitel": "korting op vis",
+      "gerecht": "kibbeling",
+      "vandatum": "vandaag",
+      "totdatum": "20 mei",
+      "beginprijs": "10",
+      "eindprijs": "5",
+      "korting": "5"
+    }
+  ],
+  "users": [
+    {
+      "gebruikersnaam": "ibrahimtest",
+      "wachtwoord": "ibrahimtestww123",
+      "adminRechten": false
+    },
+    {
+      "gebruikersnaam": "ibrahim",
+      "wachtwoord": "ibrahimtest123",
+      "adminRechten": true
+    },
+    {
+      "gebruikersnaam": "samir",
+      "wachtwoord": "test",
+      "adminRechten": false
+    }
+  ]
+}

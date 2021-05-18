@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using RestaurantApp;
 using RestaurantApp.Classes;
+using RestaurantApp.DAL;
 using RestaurantApp.Pages;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,8 @@ namespace RestaurantAppB.Pages
         public static void Run()
         {
             Console.Clear();
-            var list = JsonConvert.DeserializeObject<Dictionary<string,object>>(File.ReadAllText(@"ProjectB.json"));
+          
+            var list = JsonConvert.DeserializeObject<Dictionary<string,object>>(File.ReadAllText(@"../../../DAL/ProjectB.json"));
             var users = JsonConvert.DeserializeObject<List<Gebruikers>>(list["users"].ToString()); 
 
             Gebruikers user = new Gebruikers
