@@ -26,7 +26,6 @@ namespace RestaurantApp.Pages
 
             if (options[selectedIndex] == "Account aanmaken")
             {
-                MenuPage.ShowMenu();
                 GebruikersPage.GebruikerAanmaken();
             }
 
