@@ -30,7 +30,7 @@ namespace RestaurantApp.Pages
 
             if (options[selectedIndex] == "Overzicht menu")
             {
-                MenuPage.Main();
+                MenuPage.ShowMenu();
             }
         }
     }

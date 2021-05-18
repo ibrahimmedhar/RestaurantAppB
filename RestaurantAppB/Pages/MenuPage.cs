@@ -9,10 +9,10 @@ namespace RestaurantApp.Pages
 {
     class MenuPage
     {
-        public static void Main(string[] args)
+        public static void ShowMenu()
         {
 
-            Gang[] menu = JsonConvert.DeserializeObject<Gang[]>(File.ReadAllText(@"C:\Users\yser\source\repos\ConsoleApp2\Menu.json"));
+            Gang[] menu = JsonConvert.DeserializeObject<Gang[]>(File.ReadAllText(@"Menu.json"));
 
             Console.WriteLine("Menu");
             for (int i = 0; i < menu.Length; i++)
@@ -22,7 +22,7 @@ namespace RestaurantApp.Pages
                 for (int j = 0; j < menu[i].Gerechten.Length; j++)
                 {
                     Console.WriteLine(" ");
-                    Console.WriteLine("Gerecht " + menu[i].Gerechten[j].GerechtNummer + " : " + menu[i].Gerechten[j].Naam);
+                    Console.WriteLine(menu[i].Gerechten[j].GerechtNummer + ". " + menu[i].Gerechten[j].Naam + " -- " + menu[i].Gerechten[j].Prijs);
 
                     for (int a =0; a<menu[i].Gerechten[j].Ingredienten.Length; a++)
                     {
@@ -37,6 +37,9 @@ namespace RestaurantApp.Pages
 
             var gekozenGerechten = input.Split(" ").Select(Int32.Parse).ToList();
 
+            Console.Clear();
+
+            double totaalPrijs = 0;
 
             for (int m = 0; m < menu.Length; m++)
             {
@@ -44,11 +47,13 @@ namespace RestaurantApp.Pages
                 {
                     if (gekozenGerechten.Contains(menu[m].Gerechten[g].GerechtNummer))
                     {
-                        Console.WriteLine(menu[m].Gerechten[g].Naam);
+                        Console.WriteLine(menu[m].Gerechten[g].Naam + " " + menu[m].Gerechten[g].Prijs);
+                        totaalPrijs = totaalPrijs + menu[m].Gerechten[g].Prijs;
                     }
                         
                 }
             }
-       }
+            Console.WriteLine("Totaal Prijs : " + totaalPrijs);
+        }
     }
 }
