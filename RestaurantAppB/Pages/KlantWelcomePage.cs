@@ -6,34 +6,33 @@ using RestaurantApp.Classes;
 
 namespace RestaurantApp.Pages
 {
-    class WelcomePage
+    class KlantWelcomePage
     {
         public static void Run()
         {
             DataStorageHandler.SaveChanges();
             Console.Clear();
             string prompt = "Welkom bij ons Restaurant!";
-            string[] options = { "Klant inloggen", "Admin inloggen", "Account aanmaken"};
+            string[] options = { "Promoties inzien", "Overzicht menu", "Bestellen" };
             ConsoleMenu StartPagina = new ConsoleMenu(prompt, options);
             StartPagina.DisplayOptions();
             int selectedIndex = StartPagina.Run();
 
-            if (options[selectedIndex] == "Klant inloggen")
+            /*if (options[selectedIndex] == "Promoties inzien")
             {
-                KlantWelcomePage.Run();
+                PromotiePage.ShowPromotie();
             }
-
-            if (options[selectedIndex] == "Admin inloggen")
-            {
-                AdminWelcomePage.Run();
-            }
-
-            if (options[selectedIndex] == "Account aanmaken")
+            */
+            if (options[selectedIndex] == "Overzicht menu")
             {
                 MenuPage.ShowMenu();
-                GebruikersPage.GebruikerAanmaken();
             }
 
+            if (options[selectedIndex] == "Bestellen")
+            {
+                BestellenPage.Bestellen();
+            }
         }
+
     }
 }
