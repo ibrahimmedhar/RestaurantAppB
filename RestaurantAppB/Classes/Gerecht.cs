@@ -8,6 +8,7 @@ namespace RestaurantApp.Classes
     {
         public string Naam { get; set; }
         public int GerechtNummer { get; set; }
+        public double Prijs { get; set; }
         public string[] Ingredienten { get; set; }
     }
 }
