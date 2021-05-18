@@ -11,6 +11,7 @@ namespace RestaurantApp.Pages
     {
         public static void ShowMenu()
         {
+            Console.Clear();
 
             Gang[] menu = JsonConvert.DeserializeObject<Gang[]>(File.ReadAllText(@"Menu.json"));
 
@@ -49,11 +50,11 @@ namespace RestaurantApp.Pages
                     {
                         Console.WriteLine(menu[m].Gerechten[g].Naam + " " + menu[m].Gerechten[g].Prijs);
                         totaalPrijs = totaalPrijs + menu[m].Gerechten[g].Prijs;
-                    }
-                        
                 }
+
+            }
             }
             Console.WriteLine("Totaal Prijs : " + totaalPrijs);
-        }
+       }
     }
 }

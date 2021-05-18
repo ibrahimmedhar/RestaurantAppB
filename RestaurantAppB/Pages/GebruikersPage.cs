@@ -17,7 +17,7 @@ namespace RestaurantApp.Pages
                 wachtwoord = Beheer.Input("Voer uw gewenste wachtwoord in: "),
                 adminRechten = false
             };
-            Console.WriteLine("Gebruiker succesvol aangemaakt.") ;
+            Console.WriteLine("Gebruiker succesvol aangemaakt!") ;
             DataStorageHandler.Storage.users.Add(User);
             Console.ReadKey(true);
             WelcomePage.Run();
