@@ -3,32 +3,36 @@ using System.Collections.Generic;
 using System.Text;
 using RestaurantApp.DAL;
 using RestaurantApp.Classes;
-using RestaurantAppB.Pages;
 
 namespace RestaurantApp.Pages
 {
-    class WelcomePage
+    class KlantWelcomePage
     {
         public static void Run()
         {
             DataStorageHandler.SaveChanges();
             Console.Clear();
             string prompt = "Welkom bij ons Restaurant!";
-            string[] options = {"Inloggen", "Account aanmaken"};
+            string[] options = { "Promoties inzien", "Aanpassen menu", "Overzicht menu", "recensie(s) inzien/plaatsen", "Reserveren", "Mijn reservering", "Bestellen" };
             ConsoleMenu StartPagina = new ConsoleMenu(prompt, options);
             StartPagina.DisplayOptions();
             int selectedIndex = StartPagina.Run();
 
-            if (options[selectedIndex] == "Inloggen")
+            /*if (options[selectedIndex] == "Promoties inzien")
             {
-                InlogPage.Run();
+                PromotiePage.ShowPromotie();
+            }
+            */
+            if (options[selectedIndex] == "Overzicht menu")
+            {
+                MenuPage.ShowMenu();
             }
 
-            if (options[selectedIndex] == "Account aanmaken")
+            if (options[selectedIndex] == "Bestellen")
             {
-                GebruikersPage.GebruikerAanmaken();
+                BestellenPage.Bestellen();
             }
-
         }
+
     }
 }
