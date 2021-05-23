@@ -32,6 +32,11 @@ namespace RestaurantApp.Pages
             {
                 BestellenPage.Bestellen();
             }
+
+            if (options[selectedIndex] == "Reserveren")
+            {
+                ReservatiePage.ReservatieAanmaken();
+            }
         }
 
     }
