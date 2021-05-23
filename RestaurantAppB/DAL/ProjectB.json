@@ -25,6 +25,19 @@
       "gebruikersnaam": "samir",
       "wachtwoord": "test",
       "adminRechten": false
+    },
+    {
+      "gebruikersnaam": "Bojan",
+      "wachtwoord": "123",
+      "adminRechten": false
+    }
+  ],
+  "reservaties": [
+    {
+      "voornaam": "bojan",
+      "achternaam": "gorgievski",
+      "aantalMensen": 3,
+      "reservatieId": "HBGBFHPZEZ"
     }
   ]
 }
