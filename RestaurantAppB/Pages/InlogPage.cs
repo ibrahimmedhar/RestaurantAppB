@@ -16,7 +16,6 @@ namespace RestaurantAppB.Pages
         public static void Run()
         {
             Console.Clear();
-          
             var list = JsonConvert.DeserializeObject<Dictionary<string,object>>(File.ReadAllText(@"../../../DAL/ProjectB.json"));
             var users = JsonConvert.DeserializeObject<List<Gebruikers>>(list["users"].ToString()); 
 
@@ -37,12 +36,20 @@ namespace RestaurantAppB.Pages
                     {
                         AdminWelcomePage.Run();
                     }
+
                     else
                     {
                         KlantWelcomePage.Run();
                     }
-                }               
+                }
+
+                
             }
+            Console.Clear();
+            Console.WriteLine("Inloggevens zijn onjuist!");
+            Console.WriteLine("Probeer het opnieuw of maak een nieuw account aan.");
+            Console.ReadKey(true);
+            WelcomePage.Run();
         }
     }
 }

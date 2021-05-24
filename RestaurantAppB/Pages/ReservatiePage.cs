@@ -19,7 +19,7 @@ namespace RestaurantApp.Pages
                 aantalMensen = Int32.Parse(Beheer.Input("Aantal mensen: ")),
                 reservatieId = generator.RandomString(10)
             };
-            Console.WriteLine("Gefeliciteerd, u heeft gereserveerd!");
+            Console.WriteLine("Uw reservatie is gemaakt.");
             DataStorageHandler.Storage.reservaties.Add(reservatie);
             Console.ReadKey(true);
             WelcomePage.Run();
