@@ -33,7 +33,7 @@ namespace RestaurantApp.Pages
                 }
             }
             Console.ReadKey(true);
-            WelcomePage.Run();
+            KlantWelcomePage.Run();
         }
 
     }

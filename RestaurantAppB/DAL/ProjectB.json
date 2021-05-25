@@ -1,0 +1,48 @@
+{
+  "promotions": [
+    {
+      "promotietitel": "Korting op vis",
+      "gerecht": "Kibbeling",
+      "vandatum": "20 mei",
+      "totdatum": "27 mei",
+      "beginprijs": "10",
+      "eindprijs": "5",
+      "korting": "5"
+    },
+    {
+      "promotietitel": "Korting op Pizza's",
+      "gerecht": "Alle Pizza's",
+      "vandatum": "24 Mei",
+      "totdatum": "31 Mei",
+      "beginprijs": "9,99",
+      "eindprijs": "7,99",
+      "korting": "2"
+    }
+  ],
+  "users": [
+    {
+      "gebruikersnaam": "user",
+      "wachtwoord": "user",
+      "adminRechten": false
+    },
+    {
+      "gebruikersnaam": "admin",
+      "wachtwoord": "admin",
+      "adminRechten": true
+    }
+  ],
+  "reservaties": [
+    {
+      "voornaam": "bojan",
+      "achternaam": "gorgievski",
+      "aantalMensen": 3,
+      "reservatieId": "HBGBFHPZEZ"
+    },
+    {
+      "voornaam": "Samir",
+      "achternaam": "Lahlou",
+      "aantalMensen": 3,
+      "reservatieId": "ONZERTVTLB"
+    }
+  ]
+}

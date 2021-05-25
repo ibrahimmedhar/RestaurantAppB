@@ -21,17 +21,17 @@ namespace RestaurantApp.Pages
                 for (int j = 0; j < menu[i].Gerechten.Length; j++)
                 {
                     Console.WriteLine(" ");
-                    Console.WriteLine("Gerecht " + menu[i].Gerechten[j].GerechtNummer + " : " + menu[i].Gerechten[j].Naam);
+                    Console.WriteLine(menu[i].Gerechten[j].GerechtNummer + ". " + menu[i].Gerechten[j].Naam + " -- " + menu[i].Gerechten[j].Prijs);
 
                     for (int a =0; a<menu[i].Gerechten[j].Ingredienten.Length; a++)
                     {
-                        Console.WriteLine("Ingredienten" + ": " + menu[i].Gerechten[j].Ingredienten[a]);
+                        Console.WriteLine(menu[i].Gerechten[j].Ingredienten[a]);
                     }
                 }
 
             }
             Console.ReadKey(true);
-            WelcomePage.Run(); 
-       }
+            KlantWelcomePage.Run();
+        }
     }
 }
