@@ -9,6 +9,7 @@ namespace RestaurantApp.DAL
     {
         public List<Promoties> promotions { get; set; } = new List<Promoties>();
         public List<Gebruikers> users { get; set; } = new List<Gebruikers>();
+        public List<Recensies> reviews { get; set; } = new List<Recensies>()
 
     }
 
