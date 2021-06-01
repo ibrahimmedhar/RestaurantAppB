@@ -9,6 +9,8 @@ namespace RestaurantApp.Pages
 {
     class WelcomePage
     {
+        public static Gebruikers gebruiker;
+
         public static void Run()
         {
             DataStorageHandler.SaveChanges();

@@ -32,6 +32,7 @@ namespace RestaurantAppB.Pages
                 var currentUser = users[i];
                 if (user.gebruikersnaam.Equals(currentUser.gebruikersnaam) && user.wachtwoord.Equals(currentUser.wachtwoord))
                 {
+                    WelcomePage.gebruiker = currentUser;
                     if (currentUser.adminRechten) 
                     {
                         AdminWelcomePage.Run();
