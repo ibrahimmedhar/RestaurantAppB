@@ -12,7 +12,9 @@ namespace RestaurantApp.Pages
         public static void ShowMenu()
         {
             Console.Clear();
+
             Gang[] menu = JsonConvert.DeserializeObject<Gang[]>(File.ReadAllText(@"Menu.json"));
+
             Console.WriteLine("Menu");
             for (int i = 0; i < menu.Length; i++)
             {
