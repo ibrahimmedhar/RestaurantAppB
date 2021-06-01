@@ -12,7 +12,7 @@ namespace RestaurantApp.Pages
 {
     class RecensiePage
     {
-        public static void RecensiesZienPlaatsen()
+        public static void RecensiesZien()
         {
             Console.Clear();
             var list = JsonConvert.DeserializeObject<Dictionary<string, object>>(File.ReadAllText(@"../../../DAL/ProjectB.json"));
@@ -26,7 +26,20 @@ namespace RestaurantApp.Pages
                 Console.WriteLine(recencies[i].Recensie);
                 Console.WriteLine("\n");
             }
+            Console.ReadKey(true);
+            if (WelcomePage.gebruiker.adminRechten)
+            {
+                AdminWelcomePage.Run();
+            }
+            else
+            {
+                KlantWelcomePage.Run();
+            }
+        }
 
+        public static void RecensiePlaatsen()
+        {
+            Console.Clear();
 
             Recensies Recensie = new Recensies
             {

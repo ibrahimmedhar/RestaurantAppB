@@ -24,8 +24,11 @@ namespace RestaurantApp.Pages
                 case "Promoties inzien":
                     PromotiePage.ShowPromotie();
                     break;
-                case "recensie(s) inzien/plaatsen":
-                    RecensiePage.RecensiesZienPlaatsen();
+                case "recensies inzien":
+                    RecensiePage.RecensiesZien();
+                    break;
+                case "recensies plaatsen":
+                    RecensiePage.RecensiePlaatsen();
                     break;
                 case "Promotie aanmaken":
                     PromotiePage.PromotieAanmaken();
