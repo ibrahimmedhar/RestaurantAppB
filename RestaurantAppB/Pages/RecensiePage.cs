@@ -21,7 +21,6 @@ namespace RestaurantApp.Pages
             for (int i = 0; i < recencies.Count; i++)
             {
                 Console.WriteLine(" ");
-                var x = recencies[i];
                 Console.WriteLine(recencies[i].Naam);
                 Console.WriteLine(recencies[i].Cijfer);
                 Console.WriteLine(recencies[i].Recensie);

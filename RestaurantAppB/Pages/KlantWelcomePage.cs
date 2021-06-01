@@ -13,35 +13,57 @@ namespace RestaurantApp.Pages
             DataStorageHandler.SaveChanges();
             Console.Clear();
             string prompt = "Welkom bij ons Restaurant!";
-            string[] options = {"Promoties", "Menukaart", "Recensie(s) inzien of plaatsen", "Reserveren", "Mijn reservering", "Bestellen" };
+            string[] options = {"Promoties", "Menukaart", "recensie(s) inzien/plaatsen", "Reserveren", "Mijn reservering", "Bestellen" };
             ConsoleMenu StartPagina = new ConsoleMenu(prompt, options);
             StartPagina.DisplayOptions();
             int selectedIndex = StartPagina.Run();
+                        var selectedoption = options[selectedIndex];
 
-            if (options[selectedIndex] == "Promoties")
+            switch (selectedoption)
             {
-                PromotiePage.ShowPromotie();
+                case "Promoties inzien":
+                    PromotiePage.ShowPromotie();
+                    break;
+                case "recensie(s) inzien/plaatsen":
+                    RecensiePage.RecensiesZienPlaatsen();
+                    break;
+                case "Promoties aanmaken":
+                    PromotiePage.PromotieAanmaken();
+                    break;
+                case "Menukaart":
+                    MenuPage.ShowMenu();
+                    break;
+                case "Reserveren":
+                    ReservatiePage.ReservatieAanmaken();
+                    break;
+
+
             }
+
+            //if (options[selectedIndex] == "Promoties")
+            //{
+            //    PromotiePage.ShowPromotie();
+            //}
             
-            if (options[selectedIndex] == "Menukaart")
-            {
-                MenuPage.ShowMenu();
-            }
+            //if (options[selectedIndex] == "Menukaart")
+            //{
+            //    MenuPage.ShowMenu();
+            //}
 
-            if (options[selectedIndex] == "Bestellen")
-            {
-                BestellenPage.Bestellen();
-            }
+            //if (options[selectedIndex] == "Bestellen")
+            //{
+            //    BestellenPage.Bestellen();
+            //}
 
-            if (options[selectedIndex] == "Reserveren")
-            {
-                ReservatiePage.ReservatieAanmaken();
-            }
+            //if (options[selectedIndex] == "Reserveren")
+            //{
+            //    ReservatiePage.ReservatieAanmaken();
+            //}
 
-            if (options[selectedIndex] == "Recensie(s) inzien of plaatsen")
-            {
-                RecensiePage.RecensiesZienPlaatsen();
-            }
+            //if (options[selectedIndex] == "Recensie(s) inzien of plaatsen")
+            //{
+            //    RecensiePage.RecensiesZienPlaatsen();
+            //}
         }
 
     }
