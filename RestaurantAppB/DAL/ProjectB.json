@@ -22,13 +22,33 @@
   "users": [
     {
       "gebruikersnaam": "user",
+      "voornaam": null,
+      "achternaam": null,
+      "telefoonnummer": null,
+      "emailadres": null,
       "wachtwoord": "user",
       "adminRechten": false
     },
     {
       "gebruikersnaam": "admin",
+      "voornaam": null,
+      "achternaam": null,
+      "telefoonnummer": null,
+      "emailadres": null,
       "wachtwoord": "admin",
       "adminRechten": true
+    }
+  ],
+  "reviews": [
+    {
+      "Naam": "ibrahim",
+      "Cijfer": "7",
+      "Recensie": "de kip was droog"
+    },
+    {
+      "Naam": "user",
+      "Cijfer": "6",
+      "Recensie": "test"
     }
   ],
   "reservaties": [

@@ -22,7 +22,14 @@ namespace RestaurantApp.Pages
             Console.WriteLine("Uw reservatie is gemaakt.");
             DataStorageHandler.Storage.reservaties.Add(reservatie);
             Console.ReadKey(true);
-            WelcomePage.Run();
+            if (WelcomePage.gebruiker.adminRechten)
+            {
+                AdminWelcomePage.Run();
+            }
+            else
+            {
+                KlantWelcomePage.Run();
+            }
         }
     }
     public class RandomGenerator

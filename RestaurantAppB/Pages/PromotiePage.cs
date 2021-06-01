@@ -46,7 +46,14 @@ namespace RestaurantApp.Pages
                 Console.WriteLine(" ");
             }
             Console.ReadKey(true);
-            KlantWelcomePage.Run();
+            if (WelcomePage.gebruiker.adminRechten)
+            {
+                AdminWelcomePage.Run();
+            }
+            else
+            {
+                KlantWelcomePage.Run();
+            }
         }
     }
 }
