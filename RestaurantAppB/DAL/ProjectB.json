@@ -40,6 +40,10 @@
     },
     {
       "gebruikersnaam": "user",
+      "voornaam": null,
+      "achternaam": null,
+      "telefoonnummer": null,
+      "emailadres": null,
       "wachtwoord": "user",
       "adminRechten": false
     }
@@ -54,6 +58,11 @@
       "Naam": "user",
       "Cijfer": "6",
       "Recensie": "test"
+    },
+    {
+      "Naam": "user",
+      "Cijfer": "8",
+      "Recensie": "eten was lekker"
     }
   ],
   "reservaties": [

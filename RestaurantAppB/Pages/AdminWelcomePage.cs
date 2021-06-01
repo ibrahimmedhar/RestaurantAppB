@@ -13,8 +13,7 @@ namespace RestaurantApp.Pages
             DataStorageHandler.SaveChanges();
             Console.Clear();
             string prompt = "Welkom bij ons Restaurant!";
-            string[] options = { "Promotie aanmaken", "Promoties inzien", "Reservatie aanmaken", "Reserveringen inzien", "Menukaart", "Recensies bekijken" };
-            string[] options = { "Promoties inzien", "Promoties aanmaken", "Menukaart", "recensie(s) inzien/plaatsen", "Reserveren", "Reserveringen inzien"};
+            string[] options = { "Promoties inzien", "Promotie aanmaken", "Menukaart", "recensie(s) inzien/plaatsen", "Reserveren", "Reserveringen inzien"};
             ConsoleMenu StartPagina = new ConsoleMenu(prompt, options);
             StartPagina.DisplayOptions();
             int selectedIndex = StartPagina.Run();
@@ -28,7 +27,7 @@ namespace RestaurantApp.Pages
                 case "recensie(s) inzien/plaatsen":
                     RecensiePage.RecensiesZienPlaatsen();
                     break;
-                case "Promoties aanmaken":
+                case "Promotie aanmaken":
                     PromotiePage.PromotieAanmaken();
                     break;
                 case "Menukaart":
@@ -61,15 +60,15 @@ namespace RestaurantApp.Pages
             //    MenuPage.ShowMenu();
             //}
 
-            if (options[selectedIndex] == "Reservatie aanmaken")
-            {
-                ReservatiePage.ReservatieAanmaken();
-            }
+            //if (options[selectedIndex] == "Reservatie aanmaken")
+            //{
+            //    ReservatiePage.ReservatieAanmaken();
+            //}
 
-            if (options[selectedIndex] == "Reserveringen inzien")
-            {
-                ReservatiePage.ShowReservatie();
-            }
+            //if (options[selectedIndex] == "Reserveringen inzien")
+            //{
+            //    ReservatiePage.ShowReservatie();
+            //}
             //if (selectedoption == "Reserveren")
             //{
             //    ReservatiePage.ReservatieAanmaken();
