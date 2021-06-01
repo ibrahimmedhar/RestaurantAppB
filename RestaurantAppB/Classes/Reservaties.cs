@@ -8,7 +8,9 @@ namespace RestaurantApp.Classes
     {
         public string voornaam { get; set; }
         public string achternaam { get; set; }
+        public int tijdslot { get; set; }
         public int aantalMensen { get; set; }
+        public int tafel { get; set; }
         public string reservatieId { get; set; }
     }
 }
