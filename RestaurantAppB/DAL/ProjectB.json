@@ -46,6 +46,15 @@
       "emailadres": null,
       "wachtwoord": "user",
       "adminRechten": false
+    },
+    {
+      "gebruikersnaam": "SamirLahlou",
+      "voornaam": "Samir",
+      "achternaam": "Lahlou",
+      "telefoonnummer": "0624663088",
+      "emailadres": "samirlahlou@live.nl",
+      "wachtwoord": "WW",
+      "adminRechten": false
     }
   ],
   "reviews": [
@@ -67,44 +76,28 @@
   ],
   "reservaties": [
     {
-      "voornaam": "bojan",
-      "achternaam": "gorgievski",
-      "tijdslot": 0,
-      "aantalMensen": 3,
-      "tafel": 0,
-      "reservatieId": "HBGBFHPZEZ"
-    },
-    {
-      "voornaam": "Samir",
-      "achternaam": "Lahlou",
-      "tijdslot": 1,
-      "aantalMensen": 3,
-      "tafel": 2,
-      "reservatieId": "ONZERTVTLB"
-    },
-    {
-      "voornaam": "Samir",
-      "achternaam": "Lahlou",
-      "tijdslot": 5,
-      "aantalMensen": 4,
-      "tafel": 1,
-      "reservatieId": "XQTAMKZWWZ"
-    },
-    {
+      "gebruikersnaam": "user",
       "voornaam": "samir",
       "achternaam": "samir",
+      "telefoonnummer": null,
+      "emailadres": null,
+      "datum": null,
       "tijdslot": 0,
       "aantalMensen": 3,
       "tafel": 0,
       "reservatieId": "VNGSAMBZHF"
     },
     {
-      "voornaam": "test",
-      "achternaam": "test2",
-      "tijdslot": 2,
-      "aantalMensen": 2,
-      "tafel": 8,
-      "reservatieId": "SUBWWRUGHP"
+      "gebruikersnaam": "SamirLahlou",
+      "voornaam": "Samir",
+      "achternaam": "Lahlou",
+      "telefoonnummer": "0624663088",
+      "emailadres": "samirlahlou@live.nl",
+      "datum": "2-7-2021",
+      "tijdslot": 5,
+      "aantalMensen": 3,
+      "tafel": 13,
+      "reservatieId": "KRLXRTYPCY"
     }
   ]
 }

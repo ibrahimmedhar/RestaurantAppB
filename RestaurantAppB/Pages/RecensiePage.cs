@@ -45,7 +45,7 @@ namespace RestaurantApp.Pages
             {
                 Naam = WelcomePage.gebruiker.gebruikersnaam,
                 Cijfer = Beheer.Input("Welke cijfer geeft u het restaurant? \n"),
-                Recensie = Beheer.Input("typ hier uw recensie: \n "),
+                Recensie = Beheer.Input("Typ hier uw recensie: \n "),
 
             };
             Console.WriteLine("Recensie succesvol geplaatst.");

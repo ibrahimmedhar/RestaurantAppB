@@ -16,7 +16,7 @@ namespace RestaurantApp.Pages
             DataStorageHandler.SaveChanges();
             Console.Clear();
             string prompt = "Welkom bij ons Restaurant!";
-            string[] options = {"Inloggen", "Account aanmaken"};
+            string[] options = {"Inloggen", "Account aanmaken","Doorgaan als gast"};
             ConsoleMenu StartPagina = new ConsoleMenu(prompt, options);
             StartPagina.DisplayOptions();
             int selectedIndex = StartPagina.Run();
@@ -31,6 +31,10 @@ namespace RestaurantApp.Pages
                 GebruikersPage.GebruikerAanmaken();
             }
 
+            if (options[selectedIndex] == "Doorgaan als gast")
+            {
+                GastWelcomePage.Run();
+            }
         }
     }
 }

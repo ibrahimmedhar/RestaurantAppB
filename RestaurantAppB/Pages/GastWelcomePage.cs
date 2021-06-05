@@ -5,14 +5,14 @@ using RestaurantApp.DAL;
 
 namespace RestaurantApp.Pages
 {
-    class AdminWelcomePage
+    class GastWelcomePage
     {
         public static void Run()
         {
             DataStorageHandler.SaveChanges();
             Console.Clear();
             string prompt = "Welkom bij ons Restaurant!";
-            string[] options = { "Reservering maken", "Reserveringen inzien", "Reservering annuleren", "Promotie maken", "Promoties inzien", "Menukaart", "Recensies inzien"};
+            string[] options = { "Reservering maken", "Reservering opzoeken", "Reservering verwijderen" };
             ConsoleMenu StartPagina = new ConsoleMenu(prompt, options);
             StartPagina.DisplayOptions();
             int selectedIndex = StartPagina.Run();
@@ -20,27 +20,16 @@ namespace RestaurantApp.Pages
 
             switch (selectedoption)
             {
-                case "Promoties inzien":
-                    PromotiePage.ShowPromotie();
-                    break;
-                case "Recensies inzien":
-                    RecensiePage.RecensiesZien();
-                    break;
-                case "Promotie maken":
-                    PromotiePage.PromotieAanmaken();
-                    break;
-                case "Menukaart":
-                    MenuPage.ShowMenu();
-                    break;
                 case "Reservering maken":
                     ReservatiePage.ReservatieAanmaken();
                     break;
-                case "Reserveringen inzien":
-                    ReservatiePage.ShowReserveringen();
+                case "Reservering opzoeken":
+                    ReservatiePage.LookupReservatie();
                     break;
-                case "Reservering annuleren":
+                case "Reservering verwijderen":
                     ReservatiePage.DeleteReservatie();
                     break;
+
             }
         }
     }
