@@ -12,7 +12,7 @@ namespace RestaurantApp.Pages
             DataStorageHandler.SaveChanges();
             Console.Clear();
             string prompt = "Welkom bij ons Restaurant!";
-            string[] options = { "Reservering maken", "Reserveringen inzien", "Reservering annuleren", "Promotie maken", "Promoties inzien", "Menukaart", "Recensies inzien"};
+            string[] options = { "Reservering maken", "Reserveringen inzien", "Reservering annuleren", "Promotie maken", "Promoties inzien", "Menukaart", "Menu bijwerken", "Recensies inzien"};
             ConsoleMenu StartPagina = new ConsoleMenu(prompt, options);
             StartPagina.DisplayOptions();
             int selectedIndex = StartPagina.Run();
@@ -31,6 +31,9 @@ namespace RestaurantApp.Pages
                     break;
                 case "Menukaart":
                     MenuPage.ShowMenu();
+                    break;
+                case "Menu bijwerken":
+                    AanpassenMenuPage.ShowAanpassen();
                     break;
                 case "Reservering maken":
                     ReservatiePage.ReservatieAanmaken();
