@@ -7,6 +7,6 @@ namespace RestaurantApp.Classes
     public class Gang
     {
         public string Naam { get; set; }
-        public Gerecht[] Gerechten {get;set;}
+        public Gerecht Gerechten {get;set;}
     }
 }

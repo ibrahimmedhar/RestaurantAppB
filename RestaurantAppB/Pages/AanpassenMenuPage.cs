@@ -15,27 +15,15 @@ namespace RestaurantApp.Pages
         public static void ShowAanpassen()
         {
             Console.Clear();
-            //var lijst = JsonConvert.DeserializeObject<Dictionary<string, object>>(File.ReadAllText(@"../../../DAL/ProjectB.json"));
-            //var menu = JsonConvert.DeserializeObject<List<Gang>>(lijst["menu"].ToString());
-            //Gang[] menu = JsonConvert.DeserializeObject<Gang[]>(File.ReadAllText(@"Menu.json"));
-            //Console.WriteLine("Menu");
-            Gang[] menu = JsonConvert.DeserializeObject<Gang[]>(File.ReadAllText(@"../../../DAL/ProjectB.json"));
+            var lijst = JsonConvert.DeserializeObject<Dictionary<string, object>>(File.ReadAllText(@"../../../DAL/ProjectB.json"));
+            var menu = JsonConvert.DeserializeObject<List<Gerecht>>(lijst["menu"].ToString());
             Console.WriteLine("Menu");
-            for (int i = 0; i < menu.Length; i++)
+            for (int i = 0; i < menu.Count; i++)
             {
+                Console.WriteLine(menu[i].GerechtNummer + ". " + menu[i].Naam + " -- " + menu[i].Prijs + "\n" + menu[i].Ingredienten);
                 Console.WriteLine(" ");
-                Console.WriteLine(menu[i].Naam);
-                for (int j = 0; j < menu[i].Gerechten.Length; j++)
-                {
-                    Console.WriteLine(" ");
-                    Console.WriteLine(menu[i].Gerechten[j].GerechtNummer + ". " + menu[i].Gerechten[j].Naam + " -- " + menu[i].Gerechten[j].Prijs);
-
-                    for (int a = 0; a < menu[i].Gerechten[j].Ingredienten.Length; a++)
-                    {
-                        Console.WriteLine(menu[i].Gerechten[j].Ingredienten[a]);
-                    }
-                }
             }
+
 
             Console.WriteLine(" ");
             Console.WriteLine("Geef de gerecht nummer door die je wilt Aanpassen:");
@@ -44,23 +32,13 @@ namespace RestaurantApp.Pages
             var gekozenGerecht = int.Parse(gerechtnummer.Trim());
 
             Console.Clear();
-            for (int i = 0; i < menu.Length; i++)
+            for (int i = 0; i < menu.Count; i++)
             {
-                for (int j = 0; j < menu[i].Gerechten.Length; j++)
-                {
-                    if (gekozenGerecht == menu[i].Gerechten[j].GerechtNummer)
-                    {
-                        Console.WriteLine(" ");
-                        //menu[i].Gerechten[j].GerechtNummer = 5; // voorbeeld aanpassing gerehctnummer 
-                        Console.WriteLine(menu[i].Gerechten[j].GerechtNummer + ". " + menu[i].Gerechten[j].Naam + " -- " + menu[i].Gerechten[j].Prijs);
-
-                        for (int a = 0; a < menu[i].Gerechten[j].Ingredienten.Length; a++)
-                        {
-                            Console.WriteLine(menu[i].Gerechten[j].Ingredienten[a]);
-                        }
-                    }
-                }
+                Console.WriteLine(" ");
+                //menu[i].Gerechten[j].GerechtNummer = 5; // voorbeeld aanpassing gerehctnummer 
+                Console.WriteLine(menu[i].GerechtNummer + ". " + menu[i].Naam + " -- " + menu[i].Prijs + "\n" + menu[i].Ingredienten);
             }
+
 
             Console.WriteLine(" ");
             Console.WriteLine("Geef nieuwe naam door: ");

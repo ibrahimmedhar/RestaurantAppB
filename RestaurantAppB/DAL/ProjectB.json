@@ -80,145 +80,109 @@
   ],
   "menu": [
     {
-      "Naam": "Appetizers",
-      "Gerechten": [
-        {
-          "Naam": "buffalo chicken wings",
-          "GerechtNummer": 1,
-          "Prijs": 1.45,
-          "Ingredienten": [
-            "Chicken wings, Hot sauce, Honey "
-          ]
-        },
-        {
-          "Naam": " fish cakes",
-          "GerechtNummer": 2,
-          "Prijs": 1.25,
-          "Ingredienten": [
-            "Haddock Fillet, Milk, Potatoes,  Eggs"
-          ]
-        },
-        {
-          "Naam": "Cucumber rolls",
-          "GerechtNummer": 3,
-          "Prijs": 1.45,
-          "Ingredienten": [
-            "Cucumber, Scrambled tofu, Avocado "
-          ]
-        }
-      ]
+      "gang": "Appetizers",
+      "Naam": "buffalo chicken wings",
+      "GerechtNummer": 1,
+      "Prijs": 1.45,
+      "Ingredienten": "Chicken wings, Hot sauce, Honey "
     },
     {
-      "Naam": "Chicken",
-      "Gerechten": [
-        {
-          "Naam": "BBQ Chicken wrap ",
-          "GerechtNummer": 4,
-          "Prijs": 2.75,
-          "Ingredienten": [
-            "Chicken breast, BBQ Sauce, Black beans "
-          ]
-        },
-        {
-          "Naam": "Chicken Fajita Burrito Bowl",
-          "GerechtNummer": 5,
-          "Prijs": 3.75,
-          "Ingredienten": [
-            "Chicken breast, Hot sauce, Fajita seasoning, Chickpea "
-          ]
-        },
-        {
-          "Naam": " Coconut Chicken Soup",
-          "GerechtNummer": 6,
-          "Prijs": 1.25,
-          "Ingredienten": [
-            "Coconut milk, Chicken breast, lemon, Peanuts "
-          ]
-        },
-        {
-          "Naam": "Crispy Chicken Burger ",
-          "GerechtNummer": 7,
-          "Prijs": 2.05,
-          "Ingredienten": [
-            "Chicken breast, Hot sauce, Cheese, Buttermilk "
-          ]
-        }
-      ]
+      "gang": "Appetizers",
+      "Naam": " fish cakes",
+      "GerechtNummer": 2,
+      "Prijs": 1.25,
+      "Ingredienten": "Haddock Fillet, Milk, Potatoes,  Eggs"
     },
     {
-      "Naam": "Fish ",
-      "Gerechten": [
-        {
-          "Naam": "Crispy Fish and Chips",
-          "GerechtNummer": 8,
-          "Prijs": 1.35,
-          "Ingredienten": [
-            "Tilapia fillet, Buttermilk, Potatoes"
-          ]
-        },
-        {
-          "Naam": "Tuna Burger",
-          "GerechtNummer": 9,
-          "Prijs": 2.85,
-          "Ingredienten": [
-            "Tuna fillet. Tapioca, Buttermilk, Egg"
-          ]
-        },
-        {
-          "Naam": " Grilled sardines salad ",
-          "GerechtNummer": 10,
-          "Prijs": 2.85,
-          "Ingredienten": [
-            "Sardines, Cucumber, lemon,  Peanuts"
-          ]
-        },
-        {
-          "Naam": "Crispy Shrimp Burger ",
-          "GerechtNummer": 11,
-          "Prijs": 3.2,
-          "Ingredienten": [
-            "Tiger Shrimps, Buttermilk,  Cheese, Eggs"
-          ]
-        }
-      ]
+      "gang": "Appetizers",
+      "Naam": "Cucumber rolls",
+      "GerechtNummer": 3,
+      "Prijs": 1.45,
+      "Ingredienten": "Cucumber, Scrambled tofu, Avocado "
     },
     {
-      "Naam": "Vegan",
-      "Gerechten": [
-        {
-          "Naam": "Black beans burritos",
-          "GerechtNummer": 12,
-          "Prijs": 2.75,
-          "Ingredienten": [
-            "Black beans, Peanuts, Corn "
-          ]
-        },
-        {
-          "Naam": "Chickpea burger ",
-          "GerechtNummer": 13,
-          "Prijs": 1.8,
-          "Ingredienten": [
-            "Chickpea, Cashew paste, Coconut Cream, Vegan Cheese "
-          ]
-        },
-        {
-          "Naam": " Coconut rice with tofu",
-          "GerechtNummer": 14,
-          "Prijs": 2.9,
-          "Ingredienten": [
-            "Coconut milkt, Tofu, Carrots, Peanuts "
-          ]
-        },
-        {
-          "Naam": "Corn soup",
-          "GerechtNummer": 15,
-          "Prijs": 1.35,
-          "Ingredienten": [
-            "Sweet corn, Vegetable broth,  Carrots, Spring breans "
-          ]
-        }
-      ]
+      "gang": "Chicken",
+      "Naam": "BBQ Chicken wrap ",
+      "GerechtNummer": 4,
+      "Prijs": 2.75,
+      "Ingredienten": "Chicken breast, BBQ Sauce, Black beans "
+    },
+    {
+      "gang": "Chicken",
+      "Naam": "Chicken Fajita Burrito Bowl",
+      "GerechtNummer": 5,
+      "Prijs": 3.75,
+      "Ingredienten": "Chicken breast, Hot sauce, Fajita seasoning, Chickpea "
+    },
+    {
+      "gang": "Chicken",
+      "Naam": " Coconut Chicken Soup",
+      "GerechtNummer": 6,
+      "Prijs": 1.25,
+      "Ingredienten": "Coconut milk, Chicken breast, lemon, Peanuts "
+    },
+    {
+      "gang": "Chicken",
+      "Naam": "Crispy Chicken Burger ",
+      "GerechtNummer": 7,
+      "Prijs": 2.05,
+      "Ingredienten": "Chicken breast, Hot sauce, Cheese, Buttermilk "
+    },
+    {
+      "gang": "Fish",
+      "Naam": "Crispy Fish and Chips",
+      "GerechtNummer": 8,
+      "Prijs": 1.35,
+      "Ingredienten": "Tilapia fillet, Buttermilk, Potatoes"
+    },
+    {
+      "gang": "Fish",
+      "Naam": "Tuna Burger",
+      "GerechtNummer": 9,
+      "Prijs": 2.85,
+      "Ingredienten": "Tuna fillet. Tapioca, Buttermilk, Egg"
+    },
+    {
+      "gang": "Fish",
+      "Naam": " Grilled sardines salad ",
+      "GerechtNummer": 10,
+      "Prijs": 2.85,
+      "Ingredienten": "Sardines, Cucumber, lemon,  Peanuts"
+    },
+    {
+      "gang": "Fish",
+      "Naam": "Crispy Shrimp Burger ",
+      "GerechtNummer": 11,
+      "Prijs": 3.2,
+      "Ingredienten": "Tiger Shrimps, Buttermilk,  Cheese, Eggs"
+    },
+    {
+      "gang": "Vegan",
+      "Naam": "Black beans burritos",
+      "GerechtNummer": 12,
+      "Prijs": 2.75,
+      "Ingredienten": "Black beans, Peanuts, Corn "
+    },
+    {
+      "gang": "Vegan",
+      "Naam": "Chickpea burger ",
+      "GerechtNummer": 13,
+      "Prijs": 1.8,
+      "Ingredienten": "Chickpea, Cashew paste, Coconut Cream, Vegan Cheese "
+    },
+    {
+      "gang": "Vegan",
+      "Naam": " Coconut rice with tofu",
+      "GerechtNummer": 14,
+      "Prijs": 2.9,
+      "Ingredienten": "Coconut milkt, Tofu, Carrots, Peanuts "
+    },
+    {
+      "gang": "Vegan",
+      "Naam": "Corn soup",
+      "GerechtNummer": 15,
+      "Prijs": 1.35,
+      "Ingredienten": "Sweet corn, Vegetable broth,  Carrots, Spring breans"
     }
-  ],
-  "aanpassenmenu": []
+  ]
 }

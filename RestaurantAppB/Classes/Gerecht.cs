@@ -6,9 +6,10 @@ namespace RestaurantApp.Classes
 {
    public  class Gerecht
     {
+        public string gang { get; set; }
         public string Naam { get; set; }
         public int GerechtNummer { get; set; }
         public double Prijs { get; set; }
-        public string[] Ingredienten { get; set; }
+        public string Ingredienten { get; set; }
     }
 }
