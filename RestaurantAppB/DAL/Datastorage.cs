@@ -11,7 +11,6 @@ namespace RestaurantApp.DAL
         public List<Gebruikers> users { get; set; } = new List<Gebruikers>();
         public List<Recensies> reviews { get; set; } = new List<Recensies>();
         public List<Reservaties> reservaties { get; set; } = new List<Reservaties>();
-
+        public List<Gerecht> menu { get; set; } = new List<Gerecht>();
     }
-
 }
