@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RestaurantApp.Classes
 {
-    class Gerecht
+   public  class Gerecht
     {
         public string Naam { get; set; }
         public int GerechtNummer { get; set; }
