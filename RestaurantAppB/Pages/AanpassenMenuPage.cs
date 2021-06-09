@@ -49,7 +49,7 @@ namespace RestaurantApp.Pages
 
             Gerecht Nieuwgerecht = new Gerecht
             {
-                gang = Beheer.Input("geef aan tot welke gang dit gerecht behoort, kies uit: Appetizers, Chicken, Fish, Vegan. "),
+                gang = Beheer.Input("geef aan tot welke gang dit gerecht behoort (kies uit: Appetizers, Chicken, Fish, Vegan.) : "),
                 Naam = Beheer.Input("Geef nieuwe naam door: "),
                 Prijs = Convert.ToDouble(Beheer.Input("geef nieuwe prijs door: ")),
                 GerechtNummer = gekozenGerecht,
