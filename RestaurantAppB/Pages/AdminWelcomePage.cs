@@ -11,7 +11,7 @@ namespace RestaurantApp.Pages
         {
             DataStorageHandler.SaveChanges();
             Console.Clear();
-            string prompt = "Welkom bij ons Restaurant!";
+            string prompt = "Admin menu: ";
             string[] options = { "Reservering maken", "Reserveringen inzien", "Reservering annuleren", "Promotie maken", "Promoties inzien", "Menukaart", "Menu bijwerken", "Recensies inzien"};
             ConsoleMenu StartPagina = new ConsoleMenu(prompt, options);
             StartPagina.DisplayOptions();

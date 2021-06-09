@@ -25,6 +25,7 @@ namespace RestaurantApp.Pages
             };
             Console.WriteLine("Promotie succesvol aangemaakt.");
             DataStorageHandler.Storage.promotions.Add(Guest);
+            Console.WriteLine("Druk op een knop om verder te gaan.");
             Console.ReadKey(true);
             WelcomePage.Run();
         }
@@ -45,6 +46,7 @@ namespace RestaurantApp.Pages
                 Console.WriteLine("Dit is een korting van " + promo[i].korting + " Euro.");
                 Console.WriteLine(" ");
             }
+            Console.WriteLine("Druk op een knop om verder te gaan.");
             Console.ReadKey(true);
             if (WelcomePage.gebruiker.adminRechten)
             {

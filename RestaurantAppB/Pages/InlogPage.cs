@@ -49,6 +49,7 @@ namespace RestaurantAppB.Pages
             Console.Clear();
             Console.WriteLine("Inloggevens zijn onjuist!");
             Console.WriteLine("Probeer het opnieuw of maak een nieuw account aan.");
+            Console.WriteLine("Druk op een knop om verder te gaan.");
             Console.ReadKey(true);
             WelcomePage.Run();
         }

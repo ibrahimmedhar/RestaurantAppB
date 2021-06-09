@@ -20,12 +20,12 @@ namespace RestaurantApp.Pages
 
             for (int i = 0; i < recencies.Count; i++)
             {
-                Console.WriteLine(" ");
-                Console.WriteLine(recencies[i].Naam);
-                Console.WriteLine(recencies[i].Cijfer);
+                Console.WriteLine("Naam: " + recencies[i].Naam);
+                Console.WriteLine("Cijfer: " + recencies[i].Cijfer);
                 Console.WriteLine(recencies[i].Recensie);
                 Console.WriteLine("\n");
             }
+            Console.WriteLine("Druk op een knop om verder te gaan.");
             Console.ReadKey(true);
             if (WelcomePage.gebruiker.adminRechten)
             {
@@ -44,12 +44,13 @@ namespace RestaurantApp.Pages
             Recensies Recensie = new Recensies
             {
                 Naam = WelcomePage.gebruiker.gebruikersnaam,
-                Cijfer = Beheer.Input("Welke cijfer geeft u het restaurant? \n"),
+                Cijfer = Beheer.Input("Welke cijfer geeft u het restaurant(Cijfer uit de 10)? \n"),
                 Recensie = Beheer.Input("Typ hier uw recensie: \n "),
 
             };
             Console.WriteLine("Recensie succesvol geplaatst.");
             DataStorageHandler.Storage.reviews.Add(Recensie);
+            Console.WriteLine("Druk op een knop om verder te gaan.");
             Console.ReadKey(true);
             if (WelcomePage.gebruiker.adminRechten)
             {

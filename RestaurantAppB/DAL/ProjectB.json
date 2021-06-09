@@ -2,21 +2,21 @@
   "promotions": [
     {
       "promotietitel": "Korting op vis",
-      "gerecht": "Kibbeling",
-      "vandatum": "20 mei",
-      "totdatum": "27 mei",
-      "beginprijs": "10",
-      "eindprijs": "5",
-      "korting": "5"
+      "gerecht": "Tuna burger",
+      "vandatum": "7 juni",
+      "totdatum": "20 juni",
+      "beginprijs": "3.85",
+      "eindprijs": "2.85",
+      "korting": "1"
     },
     {
-      "promotietitel": "Korting op Pizza's",
-      "gerecht": "Alle Pizza's",
-      "vandatum": "24 Mei",
-      "totdatum": "31 Mei",
-      "beginprijs": "9,99",
-      "eindprijs": "7,99",
-      "korting": "2"
+      "promotietitel": "Korting Chicken wrap",
+      "gerecht": "BBQ Chicken wrap",
+      "vandatum": "14 juni",
+      "totdatum": "20 juni",
+      "beginprijs": "4",
+      "eindprijs": "2,75",
+      "korting": "1,25"
     }
   ],
   "users": [
@@ -39,15 +39,6 @@
       "adminRechten": true
     },
     {
-      "gebruikersnaam": "user",
-      "voornaam": null,
-      "achternaam": null,
-      "telefoonnummer": null,
-      "emailadres": null,
-      "wachtwoord": "user",
-      "adminRechten": false
-    },
-    {
       "gebruikersnaam": "SamirLahlou",
       "voornaam": "Samir",
       "achternaam": "Lahlou",
@@ -59,19 +50,14 @@
   ],
   "reviews": [
     {
-      "Naam": "ibrahim",
+      "Naam": "Ibrahim",
       "Cijfer": "7",
-      "Recensie": "de kip was droog"
+      "Recensie": "De kip was een beetje droog."
     },
     {
-      "Naam": "user",
-      "Cijfer": "6",
-      "Recensie": "test"
-    },
-    {
-      "Naam": "user",
+      "Naam": "Samir",
       "Cijfer": "8",
-      "Recensie": "eten was lekker"
+      "Recensie": "Het eten was erg lekker."
     }
   ],
   "reservaties": [
@@ -110,7 +96,7 @@
     },
     {
       "gang": "Appetizers",
-      "Naam": " fish cakes",
+      "Naam": "Fish cakes",
       "GerechtNummer": 2,
       "Prijs": 1.25,
       "Ingredienten": "Haddock Fillet, Milk, Potatoes,  Eggs"
@@ -138,7 +124,7 @@
     },
     {
       "gang": "Chicken",
-      "Naam": " Coconut Chicken Soup",
+      "Naam": "Coconut Chicken Soup",
       "GerechtNummer": 6,
       "Prijs": 1.25,
       "Ingredienten": "Coconut milk, Chicken breast, lemon, Peanuts "
@@ -166,7 +152,7 @@
     },
     {
       "gang": "Fish",
-      "Naam": " Grilled sardines salad ",
+      "Naam": "Grilled sardines salad ",
       "GerechtNummer": 10,
       "Prijs": 2.85,
       "Ingredienten": "Sardines, Cucumber, lemon,  Peanuts"
@@ -194,7 +180,7 @@
     },
     {
       "gang": "Vegan",
-      "Naam": " Coconut rice with tofu",
+      "Naam": "Coconut rice with tofu",
       "GerechtNummer": 14,
       "Prijs": 2.9,
       "Ingredienten": "Coconut milkt, Tofu, Carrots, Peanuts "

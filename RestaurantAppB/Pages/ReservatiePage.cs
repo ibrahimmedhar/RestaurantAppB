@@ -46,6 +46,7 @@ namespace RestaurantApp.Pages
             if (datumlengte != 8 || datumarray[2] != '-' || datumarray[5] != '-')
             {
                 Console.WriteLine("Dit is niet een geldige datum, probeer het opnieuw.");
+                Console.WriteLine("Druk op een knop om verder te gaan.");
                 Console.ReadKey(true);
                 if (WelcomePage.gebruiker.adminRechten)
                 {
@@ -63,6 +64,7 @@ namespace RestaurantApp.Pages
             if (tijdslot < 1 || tijdslot > 5)
             {
                 Console.WriteLine("Dit is niet een geldige tijdslot, probeer het opnieuw.");
+                Console.WriteLine("Druk op een knop om verder te gaan.");
                 Console.ReadKey(true);
                 if (WelcomePage.gebruiker.adminRechten)
                 {
@@ -151,6 +153,7 @@ namespace RestaurantApp.Pages
             if (tafel < 0 || tafel > 15)
             {
                 Console.WriteLine("Dit is niet een geldige tafel, probeer het opnieuw.");
+                Console.WriteLine("Druk op een knop om verder te gaan.");
                 Console.ReadKey(true);
                 if (WelcomePage.gebruiker.adminRechten)
                 {
@@ -167,6 +170,7 @@ namespace RestaurantApp.Pages
             if (aantalMensen > passen)
             {
                 Console.WriteLine("Er passen geen  " + aantalMensen + " mensen aan tafel " + tafel + ", probeer een andere tafel.");
+                Console.WriteLine("Druk op een knop om verder te gaan.");
                 Console.ReadKey(true);
                 if (WelcomePage.gebruiker.adminRechten)
                 {
@@ -184,6 +188,7 @@ namespace RestaurantApp.Pages
                 if (Reserve[i].datum == datum && Reserve[i].tijdslot == tijdslot && Reserve[i].tafel == tafel)
                 {
                     Console.WriteLine("Deze tafel is bezet, probeer een andere tafel.");
+                    Console.WriteLine("Druk op een knop om verder te gaan.");
                     Console.ReadKey(true);
                     if (WelcomePage.gebruiker.adminRechten)
                     {
@@ -221,7 +226,7 @@ namespace RestaurantApp.Pages
                 Console.WriteLine("Noteer uw reservatieID, deze heeft u later nodig als u uw reservering wilt inzien of annuleren.");
                 Console.WriteLine("Uw reservatieID is: " + ReservatieID);
             }
-
+            Console.WriteLine("Druk op een knop om verder te gaan.");
             Console.ReadKey(true);
             if (WelcomePage.gebruiker == null)
             {
@@ -256,6 +261,7 @@ namespace RestaurantApp.Pages
                     Console.WriteLine(" ");
                 }
             }
+            Console.WriteLine("Druk op een knop om verder te gaan.");
             Console.ReadKey(true);
             KlantWelcomePage.Run();
         }
@@ -281,6 +287,7 @@ namespace RestaurantApp.Pages
                 Console.WriteLine(" ");
 
             }
+            Console.WriteLine("Druk op een knop om verder te gaan.");
             Console.ReadKey(true);
             AdminWelcomePage.Run();
         }
@@ -348,12 +355,14 @@ namespace RestaurantApp.Pages
             }
             if (print)
             {
+                Console.WriteLine("Druk op een knop om verder te gaan.");
                 Console.ReadKey(true);
                 GastWelcomePage.Run();
             }
             else
             {
                 Console.WriteLine("Reservering is niet gevonden.");
+                Console.WriteLine("Druk op een knop om verder te gaan.");
                 Console.ReadKey(true);
                 GastWelcomePage.Run();
             }
@@ -384,7 +393,7 @@ namespace RestaurantApp.Pages
             {
                 Console.WriteLine("Reservering is niet gevonden.");
             }
-
+            Console.WriteLine("Druk op een knop om verder te gaan.");
             Console.ReadKey(true);
             if (WelcomePage.gebruiker == null)
             {

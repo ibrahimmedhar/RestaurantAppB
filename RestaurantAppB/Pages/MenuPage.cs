@@ -74,6 +74,7 @@ namespace RestaurantApp.Pages
 
             
             Console.WriteLine(" ");
+            Console.WriteLine("Druk op een knop om verder te gaan.");
             Console.ReadKey(true);
             if (WelcomePage.gebruiker.adminRechten)
             {
@@ -90,7 +91,7 @@ namespace RestaurantApp.Pages
         private static void OpgevenKeuze(List<Gerecht> menu)
         {
            
-            Console.WriteLine("\nGeef de gerechten nummers door die je wilt bestellen:");
+            Console.WriteLine("\nGeef de gerechten nummers door die je wilt bestellen(voorbeeld:12 1 3):");
             string input = Console.ReadLine();
 
             var gekozenGerechten = input.Trim().Split(" ").Select(Int32.Parse).ToList();

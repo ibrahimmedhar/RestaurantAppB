@@ -23,6 +23,7 @@ namespace RestaurantApp.Pages
                 if (Reserve[i].gebruikersnaam == username)
                 {
                     Console.WriteLine("Deze gebruikersnaam is al in gebruik, probeer een andere.");
+                    Console.WriteLine("Druk op een knop om verder te gaan.");
                     Console.ReadKey(true);
                     WelcomePage.Run();
                 }
@@ -41,6 +42,7 @@ namespace RestaurantApp.Pages
 
             Console.WriteLine("Gebruiker succesvol aangemaakt!") ;
             DataStorageHandler.Storage.users.Add(User);
+            Console.WriteLine("Druk op een knop om verder te gaan.");
             Console.ReadKey(true);
             WelcomePage.Run();
         }
