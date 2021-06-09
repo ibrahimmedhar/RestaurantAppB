@@ -30,6 +30,7 @@ namespace RestaurantApp.Pages
             }
             else if(WelcomePage.gebruiker.adminRechten)
             {
+                gebruikersnaam = "Admin"; 
                 voornaam = Beheer.Input("Voornaam:");
                 achternaam = Beheer.Input("Achternaam:");
                 telefoonnummer = Beheer.Input("Telefoonnummer:");
