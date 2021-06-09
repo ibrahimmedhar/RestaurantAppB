@@ -34,23 +34,53 @@ namespace RestaurantApp.Pages
             Console.Clear();
             for (int i = 0; i < menu.Count; i++)
             {
+                if (menu[i].GerechtNummer == gekozenGerecht)
+                {
                 Console.WriteLine(" ");
                 //menu[i].Gerechten[j].GerechtNummer = 5; // voorbeeld aanpassing gerehctnummer 
-                Console.WriteLine(menu[i].GerechtNummer + ". " + menu[i].Naam + " -- " + menu[i].Prijs + "\n" + menu[i].Ingredienten);
+                Console.WriteLine(menu[i].GerechtNummer + ". " + menu[i].Naam + " -- " + menu[i].Prijs + "\n" + menu[i].Ingredienten + "\n" menu[i].gang);
+                DataStorageHandler.Storage.menu.RemoveAt(i);
+                }
+            }
+
+            Console.WriteLine("\n");
+
+
+
+            Gerecht Nieuwgerecht = new Gerecht
+            {
+                gang = Beheer.Input("geef aan tot welke gang dit gerecht behoort: "),
+                Naam = Beheer.Input("Geef nieuwe naam door: "),
+                Prijs = Convert.ToDouble(Beheer.Input("geef nieuwe prijs door: ")),
+                GerechtNummer = gekozenGerecht,
+                Ingredienten = Beheer.Input("Geef de nieuwe ingrediënten door: "),
+
+            };
+
+            Console.WriteLine("Gerecht succesvol aangepast");
+            DataStorageHandler.Storage.menu.Add(Nieuwgerecht);
+            Console.WriteLine("Druk op een knop om verder te gaan.");
+            Console.ReadKey(true);
+            
+            if (WelcomePage.gebruiker.adminRechten)
+            {
+                AdminWelcomePage.Run();
+            }
+            else
+            {
+                KlantWelcomePage.Run();
             }
 
 
-            Console.WriteLine(" ");
-            Console.WriteLine("Geef nieuwe naam door: ");
-            string aanpassing = Console.ReadLine();
 
-            Console.WriteLine(" ");
-            Console.WriteLine("Geef nieuwe prijs door: ");
-            string aanpassingprijs = Console.ReadLine();
+            //Console.WriteLine(" ");
+            //Console.WriteLine("Geef nieuwe prijs door: ");
+            //string aanpassingprijs = Console.ReadLine();
 
-            Console.WriteLine(" ");
-            Console.WriteLine("Geef nieuwe ingredienten door: ");
-            string aanpassingingredient = Console.ReadLine();
+            //Console.WriteLine(" ");
+            //Console.WriteLine("Geef nieuwe ingredienten door: ");
+            //string aanpassingingredient = Console.ReadLine();
+
 
             /*DataStorageHandler.Storage.users.f
             string json = File.ReadAllText("@Menu.json");
