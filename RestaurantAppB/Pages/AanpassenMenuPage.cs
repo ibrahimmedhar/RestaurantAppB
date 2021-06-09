@@ -38,7 +38,7 @@ namespace RestaurantApp.Pages
                 {
                 Console.WriteLine(" ");
                 //menu[i].Gerechten[j].GerechtNummer = 5; // voorbeeld aanpassing gerehctnummer 
-                Console.WriteLine(menu[i].GerechtNummer + ". " + menu[i].Naam + " -- " + menu[i].Prijs + "\n" + menu[i].Ingredienten + "\n" menu[i].gang);
+                Console.WriteLine(menu[i].GerechtNummer + ". " + menu[i].Naam + " -- " + menu[i].Prijs + "\n" + menu[i].Ingredienten + "\n" + menu[i].gang);
                 DataStorageHandler.Storage.menu.RemoveAt(i);
                 }
             }
@@ -51,7 +51,7 @@ namespace RestaurantApp.Pages
             {
                 gang = Beheer.Input("geef aan tot welke gang dit gerecht behoort: "),
                 Naam = Beheer.Input("Geef nieuwe naam door: "),
-                Prijs = Convert.ToDouble(Beheer.Input("geef nieuwe prijs door: ")),
+                Prijs = Convert.ToInt32(Beheer.Input("geef nieuwe prijs door: ")),
                 GerechtNummer = gekozenGerecht,
                 Ingredienten = Beheer.Input("Geef de nieuwe ingrediënten door: "),
 
