@@ -28,6 +28,13 @@ namespace RestaurantApp.Pages
                 telefoonnummer = Beheer.Input("Telefoonnummer:");
                 email = Beheer.Input("eMail:");
             }
+            else if(WelcomePage.gebruiker.adminRechten)
+            {
+                voornaam = Beheer.Input("Voornaam:");
+                achternaam = Beheer.Input("Achternaam:");
+                telefoonnummer = Beheer.Input("Telefoonnummer:");
+                email = Beheer.Input("eMail:");
+            }
             else
             {
                 gebruikersnaam = WelcomePage.gebruiker.gebruikersnaam;

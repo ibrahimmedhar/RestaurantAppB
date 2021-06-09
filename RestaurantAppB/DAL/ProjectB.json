@@ -62,28 +62,28 @@
   ],
   "reservaties": [
     {
-      "gebruikersnaam": "user",
-      "voornaam": "samir",
-      "achternaam": "samir",
-      "telefoonnummer": null,
-      "emailadres": null,
-      "datum": null,
-      "tijdslot": 0,
-      "aantalMensen": 3,
-      "tafel": 0,
-      "reservatieId": "VNGSAMBZHF"
-    },
-    {
       "gebruikersnaam": "SamirLahlou",
       "voornaam": "Samir",
       "achternaam": "Lahlou",
       "telefoonnummer": "0624663088",
       "emailadres": "samirlahlou@live.nl",
-      "datum": "2-7-2021",
+      "datum": "02-07-21",
       "tijdslot": 5,
       "aantalMensen": 3,
       "tafel": 13,
       "reservatieId": "KRLXRTYPCY"
+    },
+    {
+      "gebruikersnaam": "Gast",
+      "voornaam": "Bojan",
+      "achternaam": "Gorgievski",
+      "telefoonnummer": "0233223322",
+      "emailadres": "bojan@outlook.com",
+      "datum": "20-06-21",
+      "tijdslot": 2,
+      "aantalMensen": 1,
+      "tafel": 2,
+      "reservatieId": "SHKAJGJY"
     }
   ],
   "menu": [
@@ -99,7 +99,7 @@
       "Naam": "Fish cakes",
       "GerechtNummer": 2,
       "Prijs": 1.25,
-      "Ingredienten": "Haddock Fillet, Milk, Potatoes,  Eggs"
+      "Ingredienten": "Haddock Fillet, Milk, Potatoes, Eggs"
     },
     {
       "gang": "Appetizers",
